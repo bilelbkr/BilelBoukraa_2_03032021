@@ -1,0 +1,120 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    background-color: white;
+    flex-wrap: wrap;
+} 
+header
+{
+ margin-top: 0%;
+ margin-bottom: 0%;
+ width: 100%;
+ height: 200px;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+}
+ul
+{
+    display: flex;
+    align-items: baseline;
+    list-style-type: none;
+    margin-top: 0%;
+}
+li
+{
+    padding: 10px;
+    list-style-type: none;
+}
+a
+{
+ text-decoration: none;
+ color: black;
+ border-top: 1px solid white;
+}
+a:hover
+{
+    color: #0065FC;
+    border-top: 1px solid #0065FC;   
+}
+.recherche_villes
+{
+    margin-top: 10px;
+}
+.barre_de_recherche_villes
+{
+    width: 250px;
+
+    border-radius: 5px;
+    border: 1px solid #F2F2F2;
+    display: flex;
+    background-color:#F2F2F2
+}
+.un
+{
+    background-color:#F2F2F2 ;
+   
+}
+.DEUX
+{
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+    width: 150px;
+    background-color: white;
+}
+.TROIS
+{
+    color: white;
+    background-color: #0065FC;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #F2F2F2;
+}
+.critère_de_recherche
+{
+ display: flex;
+ align-items: baseline;
+ align-content: flex-start;
+ justify-content: space-around;
+
+
+}
+.filtre
+{
+ display: flex;
+ background-color: white;
+ border-radius: 10px;
+ border: 1px solid #F2F2F2;
+}
+.icones
+{
+ color: #0065FC;
+ border-radius: 10px;
+ border: 1px solid #F2F2F2;
+ background-color: #DEEBFF;
+ 
+}
+.info
+{
+    color: #0065FC;
+    border-radius: 10px;
+    border: 1px solid #F2F2F2;
+    background-color: white;
+}
+.information
+{
+    display: flex;
+}
+.recherche
+{
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+    
+
