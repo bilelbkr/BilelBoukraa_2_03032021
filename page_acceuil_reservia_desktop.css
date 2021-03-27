@@ -120,6 +120,21 @@ input
  line-height: 1.2;
  color: black;
 }
+.search_filtre_form
+{
+    display: flex;
+}
+.search_filtre
+{
+    display: flex;
+    align-items: baseline;
+    align-content: center;
+
+}
+.search_filter_form--icone
+{
+    
+}
 .critère_de_recherche
 {
  display: flex;
