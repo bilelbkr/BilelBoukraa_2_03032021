@@ -10,297 +10,78 @@
 	<title>Reservia Page d'acceuil</title>	
 </head>
 <body>
-    <!--header-->
 	<header>
-		<nav class="nav_section">
-			<div class="d-flex">
+		<!--logo-->
+		<nav class="nav_box">
+			<div class="nav_logo">
 				<img src="logo_reservia.png" alt="logo reservia" width="70px">
 			</div>
-			<ul class="d-flex header_navbar">
-				<a class="navbar" href="#"><li class="d-inline-block">Hébergements</li></a>
-				<a class="navbar" href="#"><li class="d-inline-block">Activités</li></a>
-				<a class="navbar" href="#"><li class="d-inline-block">S'inscrire</li></a>
+			<!--nav_en-tête-->
+			<ul class="nav_ul">
+				<a class="nav_a" href="#"><li class="nav_li">Hébergements</li></a>
+				<a class="nav_a" href="#"><li class="nav_li">Activités</li></a>
+				<a class="nav_a" href="#"><li class="nav_li">S'inscrire</li></a>
 			</ul>
 		</nav>
 	</header>
-    <!--recherche-->
-        <!--titre-->
-	<section class="search_section">
-        <div class="search_wrapper">
-            <div class="search_header">
-		<h1 class="search_header_title">Trouver votre hébergement pour des vacances de rêves</h1>
-		<p class="search_header_subtitle">en plein centre ville ou en pleine nature</p>
-            </div>
-    <!--barre de recherche-->       
-		<div class="search_form">
-		  <div class="search_form_wrapper--icone search_form_wrapper--icone--left">
+	<main>
+		<!--recherche-->
+		<section class="section_recherche">
+			<div class="section_recherche_div">
+				<div class="section_recherche_entete">
+			<h1 class="section_entete_titre">Trouver votre hébergement pour des vacances de rêves</h1>
+			<p class="section_entete_soustitre">en plein centre ville ou en pleine nature</p>
+				</div>
+		<!--barre de recherche-->       
+			<div class="barre_de_recherche">
+			  <div class="icone_recherche">
+	
+				<i class="fas fa-map-marker-alt"></i>
+			  </div>
+			  <input type="text" class="recherche_input" placeholder="Marseille, France">
+			  <div class="button_rechercher_box">
+				  <button class="button_recherche">Rechercher</button>
+			  </div>
+			</div>
+			<!--filres-->
+			<div class="filtres_box">
 
-			<i class="fas fa-map-marker-alt"></i>
-          </div>
-          <input type="text" class="search_form--input" placeholder="Marseille, France">
-          <div class="search_form_search--button">
-		      <button class="search_form--button">Rechercher</button>
-          </div>
-		</div> 
-	    </div>
-        </section>
-<!--filtres-->
-<div class="search_filter_form">
-
-        <div class="search_filter_title">Filtres</div>
-
-	<div class="search_filter">
-		<div class="search_filter_form--icone search_filter_form_--icone--left"><i class="fas fa-money-bill-wave"></i></div>
-		<p class="search_filter_desciptif">Economique</p>
-    </div>
-
-	<div class="search_filter">
-		<div class="search_filter_form--icone search_filter_form_--icone--left"><i class="fas fa-child"></i></div>
-		<p class="search_filter_desciptif">Famillial</p>
-    </div>
-
-	<div class="search_filter">
-		<div class="search_filter_form--icone search_filter_form_--icone--left"><i class="fas fa-heart"></i></div>
-		<p class="search_filter_desciptif">Romantique</p>
-    </div>
-
-	<div class="search_filter">
-		<div class="search_filter_form--icone search_filter_form_--icone--left"><i class="fas fa-dog"></i></div>
-		<p class="search_filter_desciptif">Annimaux autorisé</p>
-    </div>
-</div>
-<!--info-->
+				<div class="filtres_box_title">Filtres</div>
+		
+			<div class="filtres">
+				<div class="filtres_icone_box"><i class="fas fa-money-bill-wave"></i></div>
+				<p class="filter_desciptif">Économique</p>
+			</div>
+		
+			<div class="filtres">
+				<div class="filtres_icone_box"><i class="fas fa-child"></i></div>
+				<p class="filter_desciptif">Famillial</p>
+			</div>
+		
+			<div class="filtres">
+				<div class="filtres_icone_box"><i class="fas fa-heart"></i></div>
+				<p class="filter_desciptif">Romantique</p>
+			</div>
+		
+			<div class="filtres">
+				<div class="filtres_icone_box"><i class="fas fa-dog"></i></div>
+				<p class="filter_desciptif">Annimaux autorisé</p>
+			</div>
+		</div>
+		
+			</section>
+			
+			
+		
+	</main>
+	
+<!--info
 	<div class="search_info">
 		<div class="search_info_icone"><i class="fas fa-info"></i></div>
 		<div class="search_info_txt">Plus de 500 logement sont disponible dans cette ville</div>
     </div>
-<!--Hébergement-->
-<div class="section_result_hebergement">
-<div class="result_hebergement_form">
-<div class="section_result_title">
-Hébergements à Marseille
-</div>
+	-->
 
-<div class="result_annonce_form">
-  <div class="result_annonce_form--top">
-	<div class="result_annonce">
-		<div class="result_annonce_img--form">
-			<img class="result_annoce_img" src="result_annonce_img" alt="">
-		</div>
-		<div class="result_annonce_title">Auberge La Cannebière</div>
-		<div class="result_annonce_price">Nuit à partir de 25$</div>
-		<div class="result_annonce_notation">
-			<div class="result_annonce_notation--icone">
-		       <div class="result_annonce_notation--iconeblue">
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-			   </div>
-			   <div class="result_annonce_notation--iconegrey">
-				<i class="fas fa-star"></i>
-			   </div>
-			</div>
-		</div>
-	</div>
-
-	<div class="result_annonce">
-		<div class="result_annonce_img--form">
-			<img class="result_annoce_img" src="result_annonce_img" alt="">
-		</div>
-		<div class="result_annonce_title">Hôtel du port</div>
-		<div class="result_annonce_price">Nuit à partir de 52$</div>
-		<div class="result_annonce_notation">
-			<div class="result_annonce_notation--icone">
-		       <div class="result_annonce_notation--iconeblue">
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-			   </div>
-			   <div class="result_annonce_notation--iconegrey">
-				<i class="fas fa-star"></i>
-			   </div>
-			</div>
-		</div>
-	</div>
-
-    <div class="result_annonce">
-		<div class="result_annonce_img--form">
-			<img class="result_annoce_img" src="result_annonce_img" alt="">
-		</div>
-		<div class="result_annonce_title">Hôtel Les mouettes</div>
-		<div class="result_annonce_price">Nuit à partir de 76$</div>
-		<div class="result_annonce_notation">
-			<div class="result_annonce_notation--icone">
-		       <div class="result_annonce_notation--iconeblue">
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-			   </div>
-			   <div class="result_annonce_notation--iconegrey">
-				<i class="fas fa-star"></i>
-			   </div>
-			</div>
-		</div>
-	</div>
-
-  </div>
-	<div class="result_annonce_form--bottom">
-		<div class="result_annonce">
-			<div class="result_annonce_img--form">
-				<img class="result_annoce_img" src="result_annonce_img" alt="">
-			</div>
-			<div class="result_annonce_title">hôtel de la mer</div>
-			<div class="result_annonce_price">Nuit à partir de 46$</div>
-			<div class="result_annonce_notation">
-				<div class="result_annonce_notation--icone">
-				   <div class="result_annonce_notation--iconeblue">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-				   </div>
-				   <div class="result_annonce_notation--iconegrey">
-					<i class="fas fa-star"></i>
-				   </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="result_annonce">
-			<div class="result_annonce_img--form">
-				<img class="result_annoce_img" src="result_annonce_img" alt="">
-			</div>
-			<div class="result_annonce_title">Auberge Le Pannier</div>
-			<div class="result_annonce_price">Nuit à partir de 23$</div>
-			<div class="result_annonce_notation">
-				<div class="result_annonce_notation--icone">
-				   <div class="result_annonce_notation--iconeblue">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-				   </div>
-				   <div class="result_annonce_notation--iconegrey">
-					<i class="fas fa-star"></i>
-				   </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="result_annonce">
-			<div class="result_annonce_img--form">
-				<img class="result_annoce_img" src="result_annonce_img" alt="">
-			</div>
-			<div class="result_annonce_title">Hôtel chez Amina</div>
-			<div class="result_annonce_price">Nuit à partir de 96$</div>
-			<div class="result_annonce_notation">
-				<div class="result_annonce_notation--icone">
-				   <div class="result_annonce_notation--iconeblue">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-				   </div>
-				   <div class="result_annonce_notation--iconegrey">
-					<i class="fas fa-star"></i>
-				   </div>
-				</div>
-			</div>
-		</div>
-
-	</div>
 	
-  </div>
-
-
-
-<div class="section_result_form--button">
-	<button class="result_button">Afficher plus</button>
-</div>
-</div>
-	
-</div>
-
-<div class="section_result_populair" >
-	<div class="section_populair_title--form">
-		<div class="section_populair_title">
-			Les plus populaires
-		</div>
-		<div class="section_populair_title--icone">
-			<i class="fas fa-chart-line"></i>
-		</div>
-
-	</div>
-	<div class="result_annonce_form--poulair">
-		<div class="result_annonce_populair">
-			<div class="result_annoncepop_img--form">
-				<img class="result_annocepop_img" src="result_annonce_img" alt="">
-			</div>
-			<div class="result_annoncepop_title">Hôtel Le soleil du matin</div>
-			<div class="result_annoncepop_price">Nuit à partir de 128$</div>
-			<div class="result_annoncepop_notation">
-				<div class="result_annoncepop_notation--icone">
-				   <div class="result_annoncepop_notation--iconeblue">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-				   </div>
-				   <div class="result_annoncepop_notation--iconegrey">
-					<i class="fas fa-star"></i>
-				   </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="result_annonce_populair">
-			<div class="result_annoncepop_img--form">
-				<img class="result_annocepop_img" src="result_annonce_img" alt="">
-			</div>
-			<div class="result_annoncepop_title">Au coeur de l'eau Chambre d'hôtes</div>
-			<div class="result_annoncepop_price">Nuit à partir de 72$</div>
-			<div class="result_annoncepop_notation">
-				<div class="result_annoncepop_notation--icone">
-				   <div class="result_annoncepop_notation--iconeblue">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-				   </div>
-				   <div class="result_annoncepop_notation--iconegrey">
-					<i class="fas fa-star"></i>
-				   </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="result_annonce_populair">
-			<div class="result_annoncepop_img--form">
-				<img class="result_annocepop_img" src="result_annonce_img" alt="">
-			</div>
-			<div class="result_annoncepop_title">Hôtel Tout bleu et Blanc</div>
-			<div class="result_annoncepop_price">Nuit à partir de 58$</div>
-			<div class="result_annoncepop_notation">
-				<div class="result_annoncepop_notation--icone">
-				   <div class="result_annoncepop_notation--iconeblue">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-				   </div>
-				   <div class="result_annoncepop_notation--iconegrey">
-					<i class="fas fa-star"></i>
-				   </div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</div>
-    
-
 </body>
 </html>
