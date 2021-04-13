@@ -1,10 +1,13 @@
+*
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
 body
 {
     font-family: 'Raleway', sans-serif;
-    text-align: justify;
-    background-color: white;
-    flex-wrap: wrap;
-    margin-top: 0;
+    padding: 0 2rem;
 } 
 
 header
@@ -18,43 +21,51 @@ header
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 .nav_logo
 {
-   padding: 1rem; 
+   padding: 0; 
 }
 .nav_ul
 {
     display: flex;
-    padding-top: 0px;
-    margin-top: 0px;
     list-style-type: none;   
 
 }
 .nav_li
 {
- display: flex;
- padding: 1rem;
- margin-top: 0px;
- list-style-type: none;
+ 
+  list-style-type: none;
 }
 .nav_a
 {
+    display: inline-block;
+    padding: 2rem;
     margin-top: 0px;
     text-decoration: none;
     color: black;
     border-top: 1px solid white;
 }
-.nav_a:hover
+.nav_a:hover, .nav_a.active
 {
     color: #0065FC;
     border-top: 1px solid #0065FC;   
 
 }
+.login
+{
+    color: #0065FC;
+    font-weight: bold; 
+}
+.login:hover
+{
+    border-top: 1px solid transparent;
+}
 main
 {
-display: flex;
+
 margin-top: 0;
 }
 .section_recherche
@@ -100,6 +111,7 @@ margin-top: 0;
     justify-content: center;
     min-width: 3rem;
     min-height: 3rem; 
+    height: 3rem;
     border-radius: 1rem 0rem 0rem 1rem;
 }
 .recherche_input
@@ -110,7 +122,9 @@ margin-top: 0;
     border-right: none;
     border-left: none;
     width: 235px;
-    height: 2.9rem;
+    min-width: 3rem;
+    min-height: 3rem; 
+    height: 3rem;
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.2;
@@ -132,6 +146,8 @@ margin-top: 0;
     color: white;
     background-color: #0065FC;
     padding: 0rem 1rem 0rem 1rem;
+    min-width: 3rem;
+    min-height: 3rem; 
     height: 3rem;
     border-radius: 0rem 1rem 1rem 0rem;
     border: none;
@@ -168,6 +184,7 @@ align-items: center;
     min-height: 3rem;
     border-radius: 3rem;
     border: 1px solid #F2F2F2 ;
+    margin-left: 2rem;
 }
 .filtres_icone_box
 {
@@ -180,14 +197,15 @@ align-items: center;
     min-height: 3rem;
     border-radius: 3rem;
 }
-.filtres_descriptif
+.filter_descriptif
 {
-    padding: 2rem;
+    padding: 1rem ;
     text-align: center;
 
 }
 .info
 {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -198,27 +216,89 @@ align-items: center;
     color: #0065FC;
     align-items: center;
     justify-content: center;
-    min-width: 3rem;
-    min-height: 3rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
     border-radius: 3rem;
     border: 1px solid #F2F2F2 ;
+}
+.info_icone i
+{
+    font-size: 1rem;
 }
 .info_txt
 {
     display: flex;
 }
+.section_activite
+{
+
+}
+.activite_title
+{
+
+}
+.activite_box_un
+{
+display: flex;
+}
+.activite_box_deux
+{
+
+}
+.activite_box_trois
+{
+display: flex;
+}
+.activite_xl
+{
+
+}
+.activite_xl_img
+{
+
+}
+.nom
+{
+
+}
+.activite_medium
+{
+
+}
+.activite_small
+{
+
+}
+.activite_small_img
+{
+
+}
 
 
+.footer_nav_box
+{
+display: flex;
+}
+.footer_nav
+{
 
+}
+.nav_ul
+{
 
+}
+.nav_li
+{
 
+}
+.nav_title
+{
 
+}
+.footer_nav_contenu
+{
 
-
-
-
-
-
+}
 
 
 
@@ -237,14 +317,17 @@ align-items: center;
 .section_result_hebergement
 {
 display: flex;
+justify-content: space-between;
 }
 .section_result_box
 {
 
     background-color: #F2F2F2;
+    width: 50rem;
 }
 .section_result_title
 {
+    font-weight: bold;
 }
 .result_annonce_box
 {
@@ -253,39 +336,43 @@ display: flex;
 .annonce_box_top
 {
 display: flex;
-align-items: center;
+justify-content: space-between;
 }
 .annonce_box_bottom
 {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 .result_annonce
 {
 background-color: white;
+max-width: 10rem;
+max-height: 8rem;
 }
 .result_annonce_img_box
 {
+
 }
 .result_annoce_img
 {
-
+    
 }
 .result_annonce_title
 {
-
+font-size: 12px;
+font-weight: bold;
 }
 .result_annonce_price
 {
-
+    font-size: 10px;
 }
 .result_annonce_notation
 {
 
 }
-.result_annonce_notation_icone
+.result_annonce_notation_icone i
 {
-
+font-size: 6px;
 }
 .result_annonce_notation_iconeblue
 {
@@ -301,7 +388,7 @@ background-color: white;
 }
 .result_button
 {
-
+list-style-type: none;
 }
 
 
