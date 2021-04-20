@@ -347,7 +347,9 @@ padding: 1rem;
 }
 .pop_title
 {
-
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 0.15rem;
 }
 .pop_title_icone
 {
@@ -389,15 +391,17 @@ box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
 .annonce_pop_price
 {
-
+    font-size: 12px;
+    padding-top: 0.5rem;
 }
 .annonce_pop_notation
 {
-
+margin-bottom: 0.5rem;
 }
-.annonce_pop_notation_icone
+.annonce_pop_notation_icone i
 {
-
+    font-size: 10px;
+    color: #0065FC;
 }
 .annonce_pop_notation_iconeblue
 {
