@@ -82,6 +82,7 @@ margin-top: 0;
 .section_recherche_entete
 {
     margin-top: 0;
+    margin-bottom: 1rem;
 
 
 }
@@ -201,6 +202,7 @@ align-items: center;
 {
     padding: 1rem ;
     text-align: center;
+    font-weight: bold;
 
 }
 .info
@@ -242,7 +244,7 @@ padding-top: 1rem;
 {
     
     background-color: #F2F2F2;
-    width: 50rem;
+    
     padding: 2rem;
     margin-right: 2rem;
     border-radius: 1rem;
@@ -251,7 +253,8 @@ padding-top: 1rem;
 .section_result_title
 {
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    
 }
 .result_annonce_box
 {
@@ -264,6 +267,7 @@ flex-wrap: wrap;
 background-color: white;
 flex-basis: 13rem;
 margin: 1rem;
+margin-bottom: 2rem;
 border-radius: 1rem;
 box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
@@ -329,12 +333,13 @@ color: #0065FC;
 {
 list-style-type: none;
 list-style: none;
+text-decoration: none;
 }
 
 .section_result_pop
 {
 flex-grow: 1;
-width: 1vw;
+
 background-color: #F2F2F2;
 border-radius: 1rem;
 box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
@@ -347,7 +352,7 @@ padding: 1rem;
 }
 .pop_title
 {
-    font-size: 12px;
+    
     font-weight: bold;
     padding-top: 0.15rem;
 }
@@ -364,6 +369,7 @@ padding: 1rem;
 display: flex;
 background-color: white;
 margin: 3rem;
+width: 20rem;
 border-radius: 1rem 1rem 1rem 1rem;
 box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
@@ -375,19 +381,22 @@ box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 .img_pop
 {
     
-    width: 9rem;
+    width: 7rem;
     height: 8em;
-    object-fit: cover;
+    object-fit: cover;              
     border-radius: 1rem  0 0 1rem;
     padding: 0.2rem;
 }
 .annonce_pop_body
 {
-
+margin-left: 0.5rem;
 }
 .annonce_pop_title
 {
-
+    font-size: 12px;
+    font-weight: bold;
+    padding-top:   1rem;
+    padding-right: 3rem;
 }
 .annonce_pop_price
 {
@@ -396,7 +405,8 @@ box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
 .annonce_pop_notation
 {
-margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    
 }
 .annonce_pop_notation_icone i
 {
@@ -415,65 +425,83 @@ margin-bottom: 0.5rem;
 
 .section_activite
 {
-
+margin-top: 2rem;
+margin-bottom: 5rem;
 }
 .activite_title
 {
-
+font-weight: bold;
+margin-bottom: 1rem;
 }
 .activite_box_un
 {
 display: flex;
+height: 25rem;
 }
-.box
+.xl_un
 {
-    display: flex;
-    
+width: 25%;
+margin-right: 1rem;
+border-radius: 1rem 1rem 1rem 1rem;
+box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
-.activite
+.xl_deux
 {
-width: 100%;
+width: 25%;
+margin-right: 1rem;
+border-radius: 1rem 1rem 1rem 1rem;
+box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
-.xl
+.activite_box_small 
 {
-
+width: 25%;
 }
-.medium
+.activite_box_mixte
 {
-
+    width: 25%;
+    margin-right: 1rem;
 }
-.small
-
-.activite_box_small
-{
-
-}
-
-
 .img_act
 {
     object-fit: cover;
-    width: 100px;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
 } 
 .img_xl
 {
-
+height: 90%;
 }
 .img_medium
 {
-
+    object-fit: cover;
+    height: 80%;
 }
 .img_small
 {
-
+height: 80%;
 }
 .nom
 {
-
+height: 20%;
+font-size: 12px;
+font-weight: bold;
+}
+.nom_xl
+{
+    height: 10%;
 }
 .activite_medium
 {
-
+height: 50%;
+border-radius: 1rem 1rem 1rem 1rem;
+box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.activite_small_mixte
+{
+    height: 40%;
+    margin-top: 10%;
+border-radius: 1rem 1rem 1rem 1rem;
+box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
 .activite_medium_img_box
 {
@@ -486,7 +514,13 @@ width: 100%;
 }
 .activite_small
 {
-
+height: 45%;
+border-radius: 1rem 1rem 1rem 1rem;
+box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.small 
+{
+    margin-top: 10%;
 }
 .activite_small_img_box
 {
@@ -498,31 +532,37 @@ width: 100%;
     width: 100px;
 }
 
-
+.footer_section
+{
+    background-color: #F2F2F2;
+width: 100%;
+}
+.footer_box
+{
+    display: flex;
+}
 .footer_nav_box
 {
-display: flex;
+
 }
-.footer_nav
+.footer_tittle
 {
 
 }
-.nav_ul
+.footer_nav_ul
 {
-
+list-style-type: none;
 }
-.nav_li
+.footer_nav_li
 {
-
+list-style-type: none;
 }
-.nav_title
+.footer_nav_a
 {
-
+text-decoration: none;
 }
-.footer_nav_contenu
-{
 
-}
+
 
 
 
