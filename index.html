@@ -6,7 +6,7 @@
 	<script src="https://kit.fontawesome.com/3b68e57160.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="page_acceuil_reservia_telephone.css">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
 	<title>Reservia Page d'acceuil</title>	
 </head>
 <body>
@@ -15,15 +15,14 @@
 		<nav class="nav_box">
 			<div class="nav_logo_box">
 				<img class="nav_logo" src="logo_reservia.png" alt="logo reservia" >
-				<div class="nav_div_tel"><a class="nav_a login" href="#">S'inscrire</a></div>
+				<div class="nav_div_tel"><a class="nav_a_login" href="#">S'inscrire</a></div>
 			</div>
 			<!--nav_en-tête-->
 			<ul class="nav_ul">
 	            <li class="nav_li"><a class="nav_a active" href="#">Hébergements</a></li>
 				<li class="nav_li"><a class="nav_a" href="#">Activités</a></li>
 			</ul>	
-				<div class="nav_div"><a class="nav_a login" href="#">S'inscrire</a></div>
-			
+				<div class="nav_div"><a class="nav_a login" href="#">S'inscrire</a></div>			
 		</nav>
 	</header>
 	<main>
@@ -36,75 +35,52 @@
 				</div>
 		<!--barre de recherche-->       
 			<div class="barre_de_recherche">
-			  <div class="icone_recherche">
-	
+			  <div class="icone_recherche">	
 				<i class="fas fa-map-marker-alt"></i>
 			  </div>
 			  <input type="text" class="recherche_input" placeholder="Tapez votre destination" value="Marseille, France">
 			  <div class="button_rechercher_box">
 				  <button class="button_recherche">
 					   <div class="contenu_boutton">Rechercher</div>
+					</button>
 					   <div class="logo_boutton"><i class="fas fa-search"></i></div>
-				  </button>
+				  
 			  </div>
 			</div>
 			<!--filres-->
 			<div class="filtres_box">
-
 				<div class="filtres_title_box"><h2 class="title">Filtres</h2></div>
-		<div class="telephone">
-			<div class="filtres">
-				<div class="filtres_icone_box"><i class="fas fa-money-bill-wave"></i></div>
-				<p class="filter_descriptif">Économique</p>
-			</div>
-		
-		
-		
-			<div class="filtres">
-				<div class="filtres_icone_box"><i class="fas fa-child"></i></div>
-				<p class="filter_descriptif">Famillial</p>
-			</div>
-		
-        </div>
-		
-			<div class="filtres">
-				<div class="filtres_icone_box"><i class="fas fa-heart"></i></div>
-				<p class="filter_descriptif">Romantique</p>
-			</div>
-		
-
-		
-			<div class="filtres">
-				<div class="filtres_icone_box"><i class="fas fa-dog"></i></div>
-				<p class="filter_descriptif">Annimaux autorisé</p>
-			</div>
-		
-
+			    <div class="filtres">
+				    <div class="filtres_icone_box"><i class="fas fa-money-bill-wave"></i></div>
+				    <p class="filter_descriptif">Économique</p>
+			    </div>
+			    <div class="filtres">
+				    <div class="filtres_icone_box"><i class="fas fa-child"></i></div>
+				    <p class="filter_descriptif">Famillial</p>
+		       	</div>
+			    <div class="filtres">
+				    <div class="filtres_icone_box"><i class="fas fa-heart"></i></div>
+				    <p class="filter_descriptif">Romantique</p>
+			    </div>
+			    <div class="filtres">
+				    <div class="filtres_icone_box"><i class="fas fa-dog"></i></div>
+				    <p class="filter_descriptif">Annimaux autorisé</p>
+			    </div>
 		</div>	
 		</div>
-
-<!--info-->
-<div class="info">
-	<div class="info_icone"><i class="fas fa-info"></i></div>
-	<div class="info_txt">Plus de 500 logement sont disponible dans cette ville</div>
-</div>
-		
+            <!--info-->
+            <div class="info">
+	            <div class="info_icone"><i class="fas fa-info"></i></div>
+	            <div class="info_txt">Plus de 500 logement sont disponible dans cette ville</div>
+            </div>		
 	    </section>
-			
-			
-		
-	
-
-
 <!--Hébergement-->
 <section class="section_result_hebergement">
 <div class="section_result_box">
 <div class="section_result_title">
 Hébergements à Marseille
 </div>
-
 <div class="result_annonce_box">
-  
 	<div class="result_annonce">
         <img class="img_annonce" src="./p2/auberge_la_cannebiere.jpg" alt="apercue auberge de la cannebiere ">
 		<div class="body_result_annonce">
@@ -121,7 +97,6 @@ Hébergements à Marseille
 		  </div>
 	</div>
     </div>
-
 	<div class="result_annonce">
         <img class="img_annonce" src="./p2/hotel_du_port.jpg" alt="apercu hotel du port">
 		<div class="body_result_annonce">
@@ -138,8 +113,6 @@ Hébergements à Marseille
 		  </div>
 	</div>
 	</div>
-
-
     <div class="result_annonce">
         <img class="img_annonce" src="./p2/hotel_les_mouettes.jpg" alt="apercu hotel les mouettes">
 		<div class="body_result_annonce">
@@ -155,29 +128,23 @@ Hébergements à Marseille
 			  </div>
 		   </div>
 	</div>
-	</div>
-
-
-  
-	
-		<div class="result_annonce">
-            <img class="img_annonce" src="./p2/hotel_la_mer.jpg" alt="apercu hotel de la mer ">
-			<div class="body_result_annonce">
-			  <div class="result_annonce_title">hôtel de la mer</div>
-			  <div class="result_annonce_price">Nuit à partir de 46€</div>
-			  <div class="result_annonce_notation">
-				  <div class="result_annonce_notation_icone">
-					  <i class="fas fa-star"></i>
-					  <i class="fas fa-star"></i>
-					  <i class="fas fa-star"></i>
-					  <i class="fas fa-star"></i>
-					  <i class="fas fa-star"></i>
-				  </div>
-			  </div>
+	</div>	
+    <div class="result_annonce">
+        <img class="img_annonce" src="./p2/hotel_la_mer.jpg" alt="apercu hotel de la mer ">
+		<div class="body_result_annonce">
+		    <div class="result_annonce_title">hôtel de la mer</div>
+			<div class="result_annonce_price">Nuit à partir de 46€</div>
+		    <div class="result_annonce_notation">
+				<div class="result_annonce_notation_icone">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
 		</div>
 		</div>
-	
-
 		<div class="result_annonce">
             <img class="img_annonce" src="./p2/auberge_le_panier.jpg" alt="apercu auberge le panier">
 			<div class="body_result_annonce">
@@ -194,8 +161,6 @@ Hébergements à Marseille
 			  </div>
 		</div>
 		</div>
-	
-
 		<div class="result_annonce">
             <img class="img_annonce" src="./p2/hotel_chez_amina.jpg" alt="apercu hotel chez amina">
 			<div class="body_result_annonce">
@@ -212,19 +177,12 @@ Hébergements à Marseille
 			  </div>
 		</div>
 		</div>
-	
-
-	
-	
   </div>
-
 <!--boutton hebergement-->
 <div class="result_button_box">
 	<a class="result_button">Afficher plus</a>
 </div>
 </div>
-	
-
 	<!--hebergement populaire-->
 <aside class="section_result_pop" >
 	<div class="pop_title_box">
@@ -234,7 +192,6 @@ Hébergements à Marseille
 		<div class="pop_title_icone">
 			<i class="fas fa-chart-line"></i>
 		</div>
-
 	</div>
 	<div class="annonce_pop_box">
 		<div class="annonce_pop">
@@ -255,7 +212,6 @@ Hébergements à Marseille
 			</div>
 		</div>
 		</div>
-
 		<div class="annonce_pop">
 			<img class="img_pop" src="./images/hebergements/4_small/au_coeur_de_l'eau.jpg" alt="">
 			<div class="annonce_pop_body">
@@ -263,7 +219,6 @@ Hébergements à Marseille
 					<div class="annonce_pop_title">Au coeur de l'eau Chambre d'hôtes</div>
 			        <div class="annonce_pop_price">Nuit à partir de 72€</div>
 				</div>
-			
 			    <div class="annonce_pop_notation">
 				    <div class="annonce_pop_notation_icone">
 					<i class="fas fa-star"></i>
@@ -274,9 +229,7 @@ Hébergements à Marseille
 				   </div>
 				</div>
 			</div>
-			</div>
-		
-
+		</div>
 		<div class="annonce_pop">
 			<img class="img_pop" src="./images/hebergements/4_small/bleu_et_blanc.jpg" alt="">
 			<div class="annonce_pop_body">
@@ -284,7 +237,6 @@ Hébergements à Marseille
 					<div class="annonce_pop_title">Hôtel Tout bleu et Blanc</div>
 					<div class="annonce_pop_price">Nuit à partir de 58€</div>
 				</div>
-
 			    <div class="annonce_pop_notation">
 				    <div class="annonce_pop_notation_icone">
 					<i class="fas fa-star"></i>
@@ -297,26 +249,19 @@ Hébergements à Marseille
 		</div>
 		</div>
 	</div>
-
 </aside>
 </section>
-	
-
 	<!--activite-->
-
 	<section class="section_activite">
-
 		<div class="activite_title">
 			Activité à Marseille
 		</div>
-
 		<div class="activite_box_un">
 				<div class="activite xl_un">
 					<img class="img_act img_xl" src="./images/activites/1_xlarge/vieux_port.jpg" alt="apercu du vieux port">
 					<p class="nom nom_xl">Vieux Port</p>
 				</div>
 			<div class="activite_box_mixte_un ">
-
 				<div class="activite medium">
 					<img class="img_act img_medium" src="./images/activites/3_medium/fort_de_pomegues.jpg" alt="apercu du fort de pomegues">
 					<p class="nom">Fort de Pomègues</p>
@@ -340,11 +285,8 @@ Hébergements à Marseille
 					<p class="nom">Parc Longchamp</p>
 				</div>
 			</div>
-
 		</div>
-
 	</section>
-
 </main>
 <!--footer-->
 <footer class="footer_section">
@@ -361,16 +303,14 @@ Hébergements à Marseille
 			<h3 class="footer_nav_title">Nos hébergements</h3>
 			<ul class="footer_nav_ul">
 				<li class="footer_nav_li"><a class="footer_nav_a" href="#">Charte de qualité</a></li>
-				<li class="footer_nav_li"><a class="footer_nav_a" href="#">Soumettre votre hôtel</a></li>
-				
+				<li class="footer_nav_li"><a class="footer_nav_a" href="#">Soumettre votre hôtel</a></li>				
 			</ul>
 		</div>
 		<div class="footer_nav_box">
 			<h3 class="footer_nav_title">Assistance</h3>
 			<ul class="footer_nav_ul">
 				<li class="footer_nav_li"><a class="footer_nav_a" href="#">Centre d'aide</a></li>
-				<li class="footer_nav_li"><a class="footer_nav_a" href="#">Nous contacter</a></li>
-				
+				<li class="footer_nav_li"><a class="footer_nav_a" href="#">Nous contacter</a></li>				
 			</ul>
 		</div>
 	</div>
