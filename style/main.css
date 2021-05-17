@@ -18,9 +18,29 @@ header
  width: 100%;
 }
 @media only screen and (min-width: 600px){
+    .nav_a {
+        display: inline-block;
+    padding: 2rem;
+    margin-top: 0px;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid white;
+    }
+    .filtres_elements {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav_div_tel
+{
+    display: none;
+}
     .logo_boutton
 {
     display: none;
+}
+.result_annonce {
+    margin: 1rem;
+    height: 10rem; 
 }
 main
 {
@@ -173,11 +193,15 @@ box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
     width: 100%;
     border-radius: 1rem 1rem 0 0;
 }
+.nav_a:hover, .nav_a.active
+{
+    color: #0065FC;
+    border-top: 1px solid #0065FC;   
+
+}
 }
 @media only screen and (max-width: 600px) {
-    header {
-        padding-left: 2rem;
-    }
+  
     .nom {
         height: 20%;
         font-size: 12px;
@@ -200,13 +224,34 @@ box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
         display: none;
     }
     .nav_div_tel {
-        float: right;
+        display: flex;
+        align-items: center;
     }
+    .login {
+        border: none;
+        text-decoration: none;
+    }
+   .nav_logo_box {
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+   }
     .nav_a {
-        border-bottom: 1px solid #F2F2F2;
+        
+        text-decoration: none;
+        color: black;
     }
     .nav_a:hover, .nav_a.active {
-        border-bottom: 1px solid #0065FC;   
+          
+    }
+    .nav_li {
+        border-bottom: 1px solid #F2F2F2;
+        list-style-type: none;
+    width: 100%;
+    text-align: center;
+    }
+    .nav_li:hover, .nav_li.active {
+        border-bottom: 1px solid #0065FC;
     }
     .button_recherche {
         display: none;
@@ -223,6 +268,7 @@ box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: -1rem;
     }
     .filtres_box {
         flex-wrap: wrap;
@@ -246,8 +292,8 @@ flex-direction: column;
 }
 .result_annonce
 {
-width: 25rem;
 height: 15rem;
+margin: auto;
 }
 .img_annonce
 {
@@ -264,6 +310,15 @@ height: 15rem;
     width: 100%;
     background-color: #F2F2F2;
 }
+.annonce_pop
+{
+margin: auto;
+margin-bottom: 2rem;
+}
+.img_pop {
+    width: 30%;
+    height: 100%;
+}
 .activite_box_un
 {
     flex-direction: column;
@@ -275,20 +330,24 @@ height: 15rem;
 {
     height: 75%;
     width: 100%;
+    object-fit: cover;
     border-radius: 1rem 1rem 0 0; 
 } 
 .activite
 {
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-    width: 25rem;
     height: 15rem;
-    margin: 1rem;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 .footer_box
 {
     flex-direction: column;
 }
+}
+.grey {
+    color: gray;
 }
 .nav_box
 {
@@ -300,10 +359,12 @@ height: 15rem;
 .nav_logo_box
 {
     padding: 0;
+    margin-right: auto;
 }
 .nav_logo
 { 
-   width:  100px ;
+    width: 10rem;
+    object-fit: contain;
 }
 .nav_ul
 {
@@ -313,29 +374,15 @@ height: 15rem;
 .nav_li
 {
   list-style-type: none;
+
 }
 .nav_div
 {
 
 }
-.nav_div_tel
-{
-    display: none;
-}
 .nav_a
 {
-    display: inline-block;
-    padding: 2rem;
-    margin-top: 0px;
-    text-decoration: none;
-    color: black;
-    border-top: 1px solid white;
-}
-.nav_a:hover, .nav_a.active
-{
-    color: #0065FC;
-    border-top: 1px solid #0065FC;   
-
+    
 }
 .login
 {
@@ -535,11 +582,11 @@ flex-wrap: wrap;
 {
 background-color: white;
 flex-basis: 13rem;
-margin: 1rem;
 margin-bottom: 2rem;
 border-radius: 1rem;
 box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 height: 10rem;
+cursor: pointer;
 }
 .result_annonce_img_box
 {
@@ -610,10 +657,9 @@ padding: 1rem;
 {
 display: flex;
 background-color: white;
-margin: 3rem;
-width: 20rem;
 border-radius: 1rem 1rem 1rem 1rem;
 box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+cursor: pointer;
 }
 .pop_title
 {
@@ -665,7 +711,9 @@ margin-left: 0.5rem;
     font-size: 10px;
     color: #0065FC;
 }
-
+.activite {
+cursor: pointer;
+}
 .footer_section
 {
     background-color: #F2F2F2;
@@ -689,6 +737,7 @@ padding: 1rem;
 .footer_nav_li
 {
 list-style-type: none;
+margin-bottom: 1rem;
 }
 .footer_nav_a
 {
